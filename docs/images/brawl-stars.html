@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo Jugar Brawl Stars - Presentación</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #334155;
+    }
+
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f97316;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 8rem 2rem 3rem;
+      background: linear-gradient(180deg, #0f172a, #1e293b);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #f8fafc;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #94a3b8;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .slide {
+      max-width: 1100px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+      border: 3px solid #1e293b;
+    }
+
+    .content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #f97316;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #cbd5e1;
+      margin-bottom: 1rem;
+    }
+
+    .content ul {
+      margin-left: 1.4rem;
+      color: #94a3b8;
+      line-height: 1.85;
+    }
+
+    .content li {
+      margin-bottom: 0.35rem;
+    }
+
+    #seccion1 { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); }
+    #seccion2 { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+    #seccion3 { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); }
+    #seccion4 { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+    #seccion5 { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); }
+
+    @media (max-width: 768px) {
+      .slide {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .slide img {
+        height: 240px;
+      }
+      nav {
+        gap: 0.8rem;
+        font-size: 0.85rem;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#seccion1">Qué es</a>
+    <a href="#seccion2">Controles</a>
+    <a href="#seccion3">Modos</a>
+    <a href="#seccion4">Brawlers</a>
+    <a href="#seccion5">Consejos</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Cómo Jugar Brawl Stars</h1>
+    <p>Guía completa para principiantes y jugadores intermedios</p>
+  </div>
+
+  <!-- SECCIÓN 1 -->
+  <section id="seccion1">
+    <div class="slide">
+      <img src="images/juego1.jpg" alt="Qué es Brawl Stars">
+      <div class="content">
+        <h2>1. ¿Qué es Brawl Stars?</h2>
+        <p>
+          Brawl Stars es un juego multijugador en tiempo real desarrollado por Supercell. 
+          Combina acción rápida, estrategia y personajes únicos llamados <strong>Brawlers</strong>.
+        </p>
+        <ul>
+          <li>Partidas cortas de 2 a 3 minutos.</li>
+          <li>Equipos de 3 jugadores (en la mayoría de modos).</li>
+          <li>Más de 80 Brawlers con habilidades distintas.</li>
+          <li>Disponible en Android, iOS y PC (a través de emuladores o oficial).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 -->
+  <section id="seccion2">
+    <div class="slide">
+      <div class="content">
+        <h2>2. Controles Básicos</h2>
+        <p>
+          El control es muy intuitivo y se adapta tanto a móvil como a controladores.
+        </p>
+        <ul>
+          <li><strong>Joystick izquierdo</strong>: Mover al Brawler.</li>
+          <li><strong>Botón de ataque</strong>: Disparar (puedes apuntar manteniendo pulsado).</li>
+          <li><strong>Super</strong>: Habilidad especial (se carga con ataques o eliminaciones).</li>
+          <li><strong>Gadget</strong>: Habilidad secundaria con usos limitados.</li>
+          <li><strong>Hypercharge</strong>: Mejora temporal de la Super (cuando está disponible).</li>
+        </ul>
+      </div>
+      <img src="images/juego2.jpg" alt="Controles de Brawl Stars">
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3 -->
+  <section id="seccion3">
+    <div class="slide">
+      <img src="images/juego3.jpg" alt="Modos de juego">
+      <div class="content">
+        <h2>3. Principales Modos de Juego</h2>
+        <p>
+          Cada modo tiene objetivos distintos. Es importante saber qué hacer en cada uno.
+        </p>
+        <ul>
+          <li><strong>Gem Grab</strong>: Recoger gemas y mantenerlas hasta el final.</li>
+          <li><strong>Showdown</strong>: Supervivencia (solo o en dúo). ¡Cuidado con el gas!</li>
+          <li><strong>Brawl Ball</strong>: Meter el balón en la portería rival.</li>
+          <li><strong>Heist</strong>: Destruir la caja fuerte del enemigo.</li>
+          <li><strong>Hot Zone</strong>: Controlar las zonas marcadas en el mapa.</li>
+          <li><strong>Knockout / Wipeout</strong>: Eliminar al equipo contrario.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4 -->
+  <section id="seccion4">
+    <div class="slide">
+      <div class="content">
+        <h2>4. Tipos de Brawlers</h2>
+        <p>
+          Cada Brawler pertenece a una clase que determina su rol en la partida.
+        </p>
+        <ul>
+          <li><strong>Tanque</strong>: Mucha vida, ideal para pelear de cerca (Ej: Bull, El Primo).</li>
+          <li><strong>Asesino</strong>: Daño alto y movilidad (Ej: Crow, Leon).</li>
+          <li><strong>Tirador</strong>: Daño a distancia (Ej: Colt, Brock).</li>
+          <li><strong>Soporte</strong>: Curación o ayuda al equipo (Ej: Poco, Byron).</li>
+          <li><strong>Control</strong>: Ralentizan o bloquean enemigos (Ej: Gene, Sprout).</li>
+          <li><strong>Destructivo</strong>: Daño en área (Ej: Dynamike, Tick).</li>
+        </ul>
+      </div>
+      <img src="images/juego4.jpg" alt="Tipos de Brawlers">
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5 -->
+  <section id="seccion5">
+    <div class="slide">
+      <img src="images/juego5.jpg" alt="Consejos para jugar mejor">
+      <div class="content">
+        <h2>5. Consejos para Principiantes</h2>
+        <p>
+          Sigue estos tips para mejorar rápido y subir trofeos de forma constante.
+        </p>
+        <ul>
+          <li>Aprende a <strong>apuntar</strong> en lugar de solo auto-disparar.</li>
+          <li>Usa la cobertura (arbustos y muros) a tu favor.</li>
+          <li>No persigas enemigos solos: juega con tu equipo.</li>
+          <li>Sube primero los Brawlers que más te gusten hasta Power 9-11.</li>
+          <li>Observa a jugadores buenos (YouTube / Twitch) para aprender posiciones.</li>
+          <li>Practica en el modo Entrenamiento antes de partidas ranked.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
